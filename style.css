@@ -1,0 +1,162 @@
+.container {
+    width: 1600px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 65px;
+}
+
+.nav {
+    width: 1600px;
+    height: 75px;
+    background: #222222;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 231px;
+    top: 18px;
+}
+
+.search {
+    position: absolute;
+    left: 316px;
+    line-height: 75px;
+}
+
+.menu {
+    position: absolute;
+    left: 1201px;
+    line-height: 75px;
+}
+
+.user {
+    position: absolute;
+    left: 1266px;
+    line-height: 75px;
+}
+
+.backet {
+    position: absolute;
+    left: 1328px;
+    line-height: 75px;
+}
+
+.quantity {
+    font: 400 12px Lato;
+    width: 19px;
+    height: 19px;
+    background-color: #F16D7F;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 19px;
+    position: absolute;
+    left: 1340px;
+    top: 19px;
+}
+
+.nav-icon {
+    color: white;
+}
+
+.header-img {
+    background-color: #F1E4E6;
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    border-left: 13px solid #F16D7F;
+    padding-left: 16px;
+    height: 110px;
+    margin-left: 122px;
+}
+
+.brand-text {
+    font: 900 37px Lato;
+    color: #222222;
+    line-height: 44.4px;
+    margin: 0;
+}
+
+.luxerious-text {
+    font: 700 32px Lato;
+    line-height: 38.4px;
+}
+
+.fashion {
+    color: #F16D7F;
+}
+
+.offer {
+    display: flex;
+    width: 1140px;
+    height: 490px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font: 400 16px Lato;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.padding-site {
+    padding-left: 230px;
+}
+
+.for-women {
+    background: url(img/for-women.jpg);
+    width: 360px;
+    height: 260px;
+}
+
+.for-men {
+    background: url(img/for-men.jpg);
+    width: 360px;
+    height: 260px;
+}
+
+.for-kids {
+    background: url(img/for-kids.jpg);
+    width: 360px;
+    height: 260px;
+}
+
+.accesories {
+    background: url(img/accesorios.jpg);
+    width: 1138px;
+    height: 180px;
+}
+
+.span-offer {
+    color: #F16D7F;
+    font: 700 24px Lato;
+    line-height: 28.8px;
+}
+
+.p-offer {
+    padding-top: 105px;
+}
+
+.p-offer-accesories {
+    padding-top: 65px;
+}
+
+.offer-shadow {
+    background-color: rgba(0, 0, 0, .5);
+    width: 360px;
+    height: 260px;
+    position: absolute;
+}
+
+.offer-shadow-accesories {
+    background-color: rgba(0, 0, 0, .5);
+    width: 1138px;
+    height: 180px;
+    position: absolute;
+}
