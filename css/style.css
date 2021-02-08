@@ -1,31 +1,49 @@
 @font-face {
-    font-family: Lato-Thin;
-    src: url(../fonts/Lato/Lato-Thin.ttf);
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-black.eot);
+    src: url(../fonts/lato/lato-black.eot?#iefix) format('embedded-opentype'), url(../fonts/lato/lato-black.woff2) format('woff2'), url(../fonts/lato/lato-black.woff) format('woff'), url(../fonts/lato/lato-black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Lato-Light;
-    src: url(../fonts/Lato/Lato-Light.ttf);
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-bold.eot);
+    src: url(../fonts/lato/lato-bold.eot?#iefix) format('embedded-opentype'), url(../fonts/lato/lato-bold.woff2) format('woff2'), url(../fonts/lato/lato-bold.woff) format('woff'), url(../fonts/lato/lato-bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Lato-Regular;
-    src: url(../fonts/Lato/Lato-Regular.ttf);
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-italic.eot);
+    src: url(../fonts/lato/lato-italic.eot?#iefix) format('embedded-opentype'), url(../fonts/lato/lato-italic.woff2) format('woff2'), url(../fonts/lato/lato-italic.woff) format('woff'), url(../fonts/lato/lato-italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: Lato-Bold;
-    src: url(../fonts/Lato/Lato-Bold.ttf);
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-light.eot);
+    src: url(../fonts/lato/lato-light.eot?#iefix) format('embedded-opentype'), url(../fonts/lato/lato-light.woff2) format('woff2'), url(../fonts/lato/lato-light.woff) format('woff'), url(../fonts/lato/lato-light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Lato-Black;
-    src: url(../fonts/Lato/Lato-Black.ttf);
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-regular.eot);
+    src: url(../fonts/lato/lato-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/lato/lato-regular.woff2) format('woff2'), url(../fonts/lato/lato-regular.woff) format('woff'), url(../fonts/lato/lato-regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Lato-Italic;
-    src: url(../fonts/Lato/Lato-Italic.ttf);
+    font-family: 'lato';
+    src: url(../fonts/lato/lato-thin.eot);
+    src: url(../fonts/lato/lato-thin.eot?#iefix) format('embedded-opentype'), url(../fonts/lato/lato-thin.woff2) format('woff2'), url(../fonts/lato/lato-thin.woff) format('woff'), url(../fonts/lato/lato-thin.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
 }
 
 .padding-site {
@@ -108,7 +126,7 @@
 }
 
 .header-menu-active-heading {
-    font: 14px Lato-Bold;
+    font: 700 14px 'lato';
     line-height: 17px;
     margin-top: 37px;
     margin-left: 34px;
@@ -117,7 +135,7 @@
 }
 
 .header-menu-active-subtitle {
-    font: 14px Lato-Regular;
+    font: 400 14px 'lato';
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
@@ -128,7 +146,7 @@
 }
 
 .header-menu-active-items {
-    font: 14px Lato-Regular;
+    font: 400 14px 'lato';
     line-height: 17px;
     color: #6F6E6E;
     margin-left: 55px;
@@ -153,6 +171,10 @@
     outline: none;
 }
 
+.header-menu-basket path:nth-child(2) {
+    fill: #F16D7F;
+}
+
 .header-img {
     background-color: #F1E4E6;
     display: flex;
@@ -168,7 +190,10 @@
 }
 
 .brand-text {
-    font: 37px Lato-Black;
+    font-family: 'lato';
+    font-weight: 900;
+    font-size: 37px;
+    font-style: normal;
     color: #222222;
     line-height: 44.4px;
     margin: 0;
@@ -176,7 +201,7 @@
 }
 
 .luxerious-text {
-    font: 32px Lato-Bold;
+    font: 900 32px 'lato';
     line-height: 38.4px;
     text-transform: uppercase;
 }
@@ -191,7 +216,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 1140px;
-    font: 16px Lato-Regular;
+    font: 400 16px 'lato';
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
@@ -206,7 +231,7 @@
 }
 
 .categories-item-subtitle {
-    font: 16px Lato-Regular;
+    font: 400 16px 'lato';
     line-height: 19px;
     color: white;
     display: block;
@@ -215,7 +240,7 @@
 }
 
 .categories-item-title {
-    font: 24px Lato-Bold;
+    font: 700 24px 'lato';
     line-height: 28.8px;
     color: #F16D7F;
 }
@@ -259,18 +284,17 @@
 }
 
 .products-title {
-    font: 30px Lato-Regular;
+    font: 400 30px 'lato';
     line-height: 36px;
     color: #222222;
     display: block;
     text-align: center;
     text-transform: capitalize;
-    padding-top: 96px;
-    box-sizing: border-box;
+    margin-top: 96px;
 }
 
 .products-subtitle {
-    font: 14px Lato-Regular;
+    font: 400 14px 'lato';
     line-height: 17px;
     color: #9F9F9F;
     display: block;
@@ -330,8 +354,7 @@
 }
 
 .products-item-title {
-    font: 13px Lato-Regular;
-    font-family: Lato;
+    font: 400 13px 'lato';
     line-height: 16px;
     letter-spacing: 0em;
     color: #000;
@@ -343,7 +366,7 @@
 }
 
 .products-item-txt {
-    font: 14px Lato-Light;
+    font: 300 14px 'lato';
     line-height: 17px;
     letter-spacing: 0em;
     color: #5D5D5D;
@@ -353,7 +376,7 @@
 }
 
 .products-item-price {
-    font: 16px Lato-Regular;
+    font: 400 16px 'lato';
     line-height: 19px;
     letter-spacing: 0em;
     color: #F16D7F;
@@ -364,6 +387,9 @@
 }
 
 .products-item-btn {
+    font: 400 14px 'lato';
+    line-height: 17px;
+    letter-spacing: 0em;
     display: none;
     background: rgba(0, 0, 0, .1);
     border: 1px solid white;
@@ -376,9 +402,6 @@
     fill: white;
     color: white;
     text-transform: capitalize;
-    font: 14px Lato-Regular;
-    line-height: 17px;
-    letter-spacing: 0em;
     outline: none;
 }
 
@@ -389,11 +412,11 @@
 }
 
 .products-btn {
+    font: 400 16px 'lato';
+    text-transform: capitalize;
+    letter-spacing: 0em;
     color: #F26376;
     background-color: white;
-    text-transform: capitalize;
-    font: 16px Lato-Regular;
-    letter-spacing: 0em;
     border: 1px solid #FF6A6A;
     width: 212px;
     height: 48px;
@@ -436,7 +459,7 @@
 }
 
 .features-item-title {
-    font: 19.96px Lato-Regular;
+    font: 400 20px 'lato';
     line-height: 24px;
     color: #FBFBFB;
     text-transform: capitalize;
@@ -444,7 +467,7 @@
 }
 
 .features-item-txt {
-    font: 14px Lato-Light;
+    font: 300 14px 'lato';
     line-height: 17px;
     color: #FBFBFB;
     margin-top: 16px;
@@ -474,7 +497,7 @@
 }
 
 .subscribe-info-txt {
-    font: 20px Lato-Regular;
+    font: 400 20px 'lato';
     line-height: 24px;
     letter-spacing: 0em;
     text-align: center;
@@ -483,7 +506,7 @@
 }
 
 .subscribe-info-txt span {
-    font: 20px Lato-Italic;
+    font: italic 400 20px 'lato';
     line-height: 24px;
     letter-spacing: 0em;
     text-align: center;
@@ -498,7 +521,7 @@
 }
 
 .subscribing-title {
-    font: 24px Lato-Bold;
+    font: 700 24px 'lato';
     line-height: 38px;
     letter-spacing: 0em;
     text-align: center;
@@ -506,7 +529,7 @@
 }
 
 .subscribing-subtitle {
-    font: 18px Lato-Regular;
+    font: 400 18px 'lato';
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
@@ -521,7 +544,7 @@
 }
 
 .subscribing-form-email {
-    font: 14px Lato-Regular;
+    font: 400 14px 'lato';
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
@@ -535,7 +558,7 @@
 }
 
 .subscribing-form-btn {
-    font: 14px Lato-Regular;
+    font: 400 14px 'lato';
     line-height: 17px;
     letter-spacing: 0em;
     text-align: center;
@@ -570,7 +593,7 @@
 }
 
 .page-footer-txt {
-    font: 16px Lato-Regular;
+    font: 400 16px 'lato';
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
@@ -621,12 +644,11 @@
 }
 
 .page-header-title {
-    font: 24px Lato-Regular;
+    font: 400 24px 'lato';
     color: #F16D7F;
     text-transform: uppercase;
     line-height: 29px;
     letter-spacing: 0em;
-    text-align: left;
 }
 
 .page-header-list {
@@ -642,14 +664,14 @@
 }
 
 .page-header-list-slesh {
-    font: 14px Lato-Light;
+    font: 300 14px 'lato';
     line-height: 17px;
     color: #636363;
 }
 
 .page-header-list-link {
     text-transform: uppercase;
-    font: 14px Lato-Light;
+    font: 300 14px 'lato';
     line-height: 17px;
     color: #636363;
     text-decoration: none;
@@ -664,7 +686,7 @@
 }
 
 .page-header-list > li:last-child > a {
-    font-weight: 700;
+    font: 700 14px 'lato';
     color: #F16D7F;
 }
 
@@ -677,12 +699,12 @@
 }
 
 .products-dropdown-btn {
+    font: 700 14px 'lato';
+    line-height: 17px;
+    text-transform: uppercase;
     border: none;
     background: #fff;
-    font: 14px Lato-Bold;
-    line-height: 17px;
     color: #000000;
-    text-transform: uppercase;
     outline: none;
 }
 
@@ -706,7 +728,7 @@
 }
 
 .products-dropdown-select {
-    font: 14px Lato-Regular;
+    font: 400 14px 'lato';
     line-height: 17px;
     text-transform: uppercase;
     color: #6F6E6E;
@@ -741,7 +763,7 @@
 .products-pagination:hover {}
 
 .products-pagination-item {
-    font: 16px Lato-Light;
+    font: 300 16px 'lato';
     line-height: 19px;
     color: #C4C4C4;
     text-decoration: none;
@@ -750,7 +772,7 @@
 .products-pagination > .products-pagination-item:first-child,
 .products-pagination > .products-pagination-item:last-child {
     color: #000;
-    font-weight: 900;
+    font: 900 16px 'lato';
 }
 
 .products-pagination-item:hover:not(.pagination-item-not-hover) {
@@ -806,7 +828,7 @@
 }
 
 .produce-benefits {
-    font: 14px Lato-Light;
+    font: 300 14px 'lato';
     line-height: 17px;
     color: #F16D7F;
     display: flex;
@@ -870,7 +892,7 @@
 }
 
 .produce-benefits-select {
-    font: 14px Lato-Regular;
+    font: 400 14px 'lato';
     line-height: 17px;
     color: #6F6E6E;
     text-transform: uppercase;
@@ -889,6 +911,10 @@
 }
 
 .produce-benefits-btn {
+    font: 400 14px 'lato';
+    text-transform: capitalize;
+    line-height: 17px;
+    letter-spacing: 0em;
     background: #fff;
     border: 1px solid #F26376;
     width: 139px;
@@ -896,10 +922,6 @@
     padding: 2px 0;
     fill: #F26376;
     color: #F26376;
-    text-transform: capitalize;
-    font: 14px Lato-Regular;
-    line-height: 17px;
-    letter-spacing: 0em;
     outline: none;
     display: flex;
     justify-content: space-evenly;
@@ -922,4 +944,296 @@
 .product-page-margin {
     margin-top: 63px;
     margin-bottom: 128px;
+}
+
+
+/*=========Cart=========*/
+
+.page-header-title-cart {
+    font: 400 24px 'lato';
+    text-transform: uppercase;
+    line-height: 29px;
+    letter-spacing: 0em;
+    display: block;
+    color: #F16D7F;
+    background: #F8F3F4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.basket {
+    display: flex;
+}
+
+.basket-products {
+    display: flex;
+    flex-direction: column;
+    padding-top: 96px;
+    box-sizing: border-box;
+}
+
+.basket-products-item {
+    display: flex;
+    width: 652px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.basket-products-item-desc {
+    font: 400 22px 'lato';
+    line-height: 26px;
+    color: #575757;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    margin-left: 31px;
+    width: 193px;
+    padding-top: 22px;
+    box-sizing: border-box;
+}
+
+.basket-products-item-desc-title {
+    font: 400 24px 'lato';
+    line-height: 29px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.basket-products-item-desc-price {
+    margin-bottom: 6px;
+    margin-top: 42px;
+}
+
+.basket-products-item-desc-price span {
+    color: #EF5B70;
+}
+
+.basket-products-item-desc-color {
+    margin-bottom: 6px;
+}
+
+.basket-products-item-desc-size {
+    margin-bottom: 6px;
+}
+
+.basket-products-item-desc-quantity {
+    display: flex;
+}
+
+.basket-products-item-desc-quantity::after {
+    content: "2";
+    display: block;
+    width: 44px;
+    height: 25px;
+    font-size: 18px;
+    color: #656565;
+    border: 1px solid #eaeaea;
+    margin-left: 24px;
+    text-align: center;
+}
+
+.basket-products-item-btn {
+    fill: #575757;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: #fff;
+    padding-top: 28px;
+    box-sizing: border-box;
+    margin-left: 126px;
+    outline: none;
+}
+
+.basket-products-item-btn:hover {
+    fill: #ccc;
+    cursor: pointer;
+}
+
+.basket-products-item-btn:active {
+    fill: #575757;
+}
+
+.basket-products-btn {
+    font: 300 14px 'lato';
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basket-products-btn button {
+    font: 300 14px 'lato';
+    line-height: 17px;
+    text-transform: uppercase;
+    width: 235px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    color: #000000;
+    background: #fff;
+    border: 1px solid #A4A4A4;
+    outline: none;
+}
+
+.basket-products-btn button:hover {
+    color: #fff;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.basket-products-btn button:active {
+    color: #4a4a4a;
+    background: #fff;
+}
+
+.basket-features {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 113px;
+    margin-left: 128px;
+}
+
+.basket-features-form {}
+
+.basket-features-form-fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.basket-features-form-title {
+    font: 300 16px 'lato';
+    color: #222222;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.basket-features-form-input {
+    font: 300 13px 'lato';
+    color: #222222;
+    line-height: 16px;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #a4a4a4;
+}
+
+.basket-features-form-input::placeholder {
+    font: 300 13px 'lato';
+    color: #222222;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding-left: 17px;
+}
+
+.basket-features-form-input[placeholder="bangladesh"]::placeholder {
+    font: 300 13px 'lato';
+    line-height: 16px;
+    color: #B1B1B1;
+    text-transform: capitalize;
+}
+
+.basket-features-form-input[type="submit"] {
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    margin-top: 23px;
+    width: 101px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    background: #fff;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.basket-features-form-input[type="submit"]:hover {
+    color: #fff;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.basket-features-form-input[type="submit"]:active {
+    color: #4a4a4a;
+    background: #fff;
+}
+
+.features-checkout {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-top: 57px;
+    background: #F5F3F3;
+    padding-top: 39px;
+    padding-bottom: 42px;
+    box-sizing: border-box;
+}
+
+.features-checkout-sub_total {
+    font: 400 11px 'lato';
+    line-height: 13px;
+    color: #4A4A4A;
+    padding-left: 218px;
+    box-sizing: border-box;
+}
+
+.features-checkout-sub_total span {
+    padding-left: 25px;
+}
+
+.features-checkout-grandt_total {
+    font: 300 16px 'lato';
+    line-height: 19px;
+    color: #222222;
+    padding-top: 12px;
+    padding-left: 153px;
+    box-sizing: border-box;
+}
+
+.features-checkout-grandt_total span {
+    font: 700 16px 'lato';
+    color: #F16D7F;
+    padding-left: 15px;
+}
+
+.features-checkout-line {
+    content: "";
+    display: block;
+    width: 275px;
+    height: 1px;
+    background: #E2E2E2;
+    margin: 21px auto 17px;
+}
+
+.features-checkout-btn {
+    font: 300 16px 'lato';
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F16D7F;
+    width: 273px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+}
+
+.features-checkout-btn:hover {
+    color: #f16d7f;
+    background: #fff;
+    cursor: pointer;
+}
+
+.features-checkout-btn:active {
+    color: #fff;
+    background: #f16d7f;
 }
