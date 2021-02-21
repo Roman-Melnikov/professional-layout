@@ -1441,22 +1441,13 @@
     text-align: right;
     padding-right: 10.3%;
     box-sizing: border-box;
+    margin-bottom: 38px;
 }
 
 .features-checkout-grandt_total span {
     font: 700 16px 'lato';
     color: #F16D7F;
     padding-left: 15px;
-}
-
-.features-checkout-line {
-    content: "";
-    display: block;
-    max-width: 275px;
-    width: 75%;
-    height: 1px;
-    background: #E2E2E2;
-    margin: 21px auto 17px;
 }
 
 .features-checkout-btn {
@@ -1470,6 +1461,19 @@
     box-sizing: border-box;
     border: 3px solid transparent;
     margin: 0 auto;
+    position: relative;
+}
+
+.features-checkout-btn:before {
+    content: "";
+    display: block;
+    max-width: 275px;
+    width: 100%;
+    height: 1px;
+    background: #E2E2E2;
+    position: absolute;
+    top: -17px;
+    left: 0;
 }
 
 .features-checkout-btn:hover {
@@ -2158,5 +2162,4 @@
     .registration-input_submit-wrp {
         margin-bottom: 40px;
     }
-
 }
