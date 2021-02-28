@@ -46,6 +46,11 @@
     font-style: normal;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
 }
@@ -270,7 +275,7 @@ body {
     border-left: 13px solid #F16D7F;
     padding-left: 16px;
     margin-left: 63px;
-    width: 405px;
+    max-width: 405px;
     box-sizing: border-box;
 }
 
@@ -318,6 +323,7 @@ body {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .categories-item-subtitle {
@@ -568,7 +574,7 @@ body {
 
 .features-item {
     display: flex;
-    width: 360px;
+    max-width: 360px;
     flex-direction: column;
     margin-right: 30px;
     text-align: center;
@@ -608,7 +614,7 @@ body {
 
 .subscribe-info {
     display: flex;
-    width: 360px;
+    max-width: 360px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -639,7 +645,7 @@ body {
 
 .subscribing {
     display: flex;
-    width: 557px;
+    max-width: 557px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -664,9 +670,14 @@ body {
 }
 
 .subscribing-form {
-    width: 443px;
+    max-width: 443px;
+    width: 100%;
     display: flex;
     margin-top: 32px;
+}
+
+.subscribing-form label {
+    width: 100%;
 }
 
 .subscribing-form-email:focus {
@@ -685,7 +696,8 @@ body {
     background: #E1E1E1;
     border: none;
     border-radius: 25px 0 0 25px;
-    width: 342px;
+    width: 100%;
+    max-width: 256px;
     padding: 17px 0 16px 20px;
     box-sizing: border-box;
     outline: none;
@@ -707,6 +719,9 @@ body {
     border: none;
     border-radius: 0 25px 25px 0;
     width: 97px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     outline: none;
 }
 
@@ -731,6 +746,8 @@ body {
 .page-footer-padding {
     padding-left: 14.38%;
     padding-right: 14.38%;
+    padding-top: 24px;
+    padding-bottom: 24px;
     box-sizing: border-box;
 }
 
@@ -929,7 +946,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     border: 1px solid #EBEBEB;
-    width: 284px;
+    max-width: 284px;
+    width: 100%;
     padding: 12px 0;
     box-sizing: border-box;
 }
@@ -1314,6 +1332,10 @@ body {
     border: 1px solid #A4A4A4;
 }
 
+.basket-products-btn button:first-child {
+    margin-right: 15px;
+}
+
 .basket-products-btn button:hover {
     color: #fff;
     background: #ccc;
@@ -1341,6 +1363,9 @@ body {
 }
 
 .basket-features-form {
+    max-width: 360px;
+    width: 100%;
+    margin-right: 15px;
 }
 
 .basket-features-form-fieldset {
@@ -1350,6 +1375,8 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width: 360px;
+    width: 100%;
 }
 
 .basket-features-form-title {
@@ -1419,6 +1446,8 @@ body {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
+    max-width: 360px;
+    width: 100%;
     margin-top: 57px;
     background: #F5F3F3;
     padding-top: 39px;
@@ -1696,7 +1725,7 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
     }
 
     .padding-site {
@@ -1721,13 +1750,13 @@ body {
     }
 
     .header-img img {
-        width: 368px;
+        max-width: 368px;
         height: 386px;
     }
 
     .heading {
         margin-left: 39px;
-        width: 311px;
+        max-width: 311px;
     }
 
     .brand-text {
@@ -1741,18 +1770,18 @@ body {
     }
 
     .categories {
-        width: 768px;
+        max-width: 768px;
         margin-top: 25px;
     }
 
     .categories-item {
-        width: 232px;
+        max-width: 232px;
         height: 168px;
         margin-bottom: 19px;
     }
 
     .categories-item-last {
-        width: 735px;
+        max-width: 735px;
         height: 116px;
     }
 
@@ -1769,7 +1798,7 @@ body {
     }
 
     .products-item {
-        width: 360px;
+        width: calc((100% - 16px) / 2);
         margin-bottom: 16px;
     }
 
@@ -1778,7 +1807,7 @@ body {
     }
 
     .features {
-        width: 768px;
+        max-width: 768px;
         flex-direction: column;
         align-items: center;
         padding-top: 48px;
@@ -1795,7 +1824,7 @@ body {
     }
 
     .subscribe {
-        width: 768px;
+        max-width: 768px;
         flex-direction: column;
         align-items: center;
         padding-top: 64px;
@@ -1803,7 +1832,7 @@ body {
     }
 
     .page-footer {
-        width: 768px;
+        max-width: 768px;
     }
 
     .page-footer-padding {
@@ -1814,7 +1843,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        width: 480px;
+        max-width: 480px;
     }
 
     .header-menu {
@@ -1829,7 +1858,7 @@ body {
     }
 
     .header-img {
-        width: 480px;
+        max-width: 480px;
         height: 363px;
     }
 
@@ -1839,7 +1868,7 @@ body {
 
     .heading {
         margin: 0 auto;
-        width: 263px;
+        max-width: 263px;
     }
 
     .brand-text {
@@ -1853,18 +1882,18 @@ body {
     }
 
     .categories {
-        width: 480px;
+        max-width: 480px;
         margin-top: 64px;
     }
 
     .categories-item {
-        width: 343px;
+        max-width: 343px;
         height: 247px;
         margin: 0 0 32px 0;
     }
 
     .categories-item-last {
-        width: 343px;
+        max-width: 343px;
         height: 111px;
         margin: 0 auto;
     }
@@ -1887,6 +1916,8 @@ body {
     }
 
     .products-item {
+        max-width: 360px;
+        width: 100%;
         margin: 0 auto 16px auto;
     }
 
@@ -1895,7 +1926,7 @@ body {
     }
 
     .features {
-        width: 480px;
+        max-width: 480px;
         flex-direction: column;
         align-items: center;
         padding-top: 48px;
@@ -1903,7 +1934,7 @@ body {
     }
 
     .subscribe {
-        width: 480px;
+        max-width: 480px;
         padding-top: 64px;
         padding-bottom: 109px;
     }
@@ -1913,7 +1944,7 @@ body {
     }
 
     .page-footer {
-        width: 480px;
+        max-width: 480px;
         flex-direction: column-reverse;
         padding-top: 43px;
         padding-bottom: 9px;
@@ -1987,7 +2018,7 @@ body {
     }
 
     .produce-slider-img {
-        width: 466px;
+        max-width: 466px;
         height: 565px;
     }
 
@@ -2011,7 +2042,7 @@ body {
     }
 
     .produce-slider-img {
-        width: 374px;
+        max-width: 374px;
         height: 454px;
     }
 
@@ -2052,7 +2083,7 @@ body {
     }
 
     .basket-products-item img {
-        width: 262px;
+        max-width: 262px;
         height: 306px;
     }
 
@@ -2062,8 +2093,8 @@ body {
 
     .basket-products-btn {
         margin-top: 62px;
-        padding-left: 114px;
-        padding-right: 114px;
+        padding-right: 14.84%;
+        padding-left: 14.84%;
         box-sizing: border-box;
     }
 
@@ -2076,12 +2107,7 @@ body {
         margin-bottom: 128px;
     }
 
-    .basket-features-form-fieldset {
-        width: 360px;
-    }
-
     .features-checkout {
-        width: 360px;
         margin-top: 38px;
         height: 214px;
     }
@@ -2094,7 +2120,7 @@ body {
     }
 
     .basket-products-item img {
-        width: 144px;
+        max-width: 144px;
         height: 188px;
     }
 
